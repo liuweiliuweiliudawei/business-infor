@@ -29,19 +29,23 @@
 #      probability: 1.0
 #  cloud:
 #    gateway:
+#      discovery:
+#        locator:
+#          enabled: true
 #      locator:
-#        enabled: false
+#        enabled: true
+#        lower-case-service-id: true  #微服务名称以小写形式呈现
 #      routes:
 #        - id: business-user
 #          uri: lb://business-user
 #          predicates:
 #            - Path=/business-user/**
 #          filters:
-#            - StripPrefix=1
 #            - name: Hystrix
 #              args:
 #                name: Hystrix
 #                fallbackUri: forward:/fallback
+#            - StripPrefix=1
 #
 #        - id: business-cooperation
 #          uri: lb://business-cooperation
@@ -52,6 +56,7 @@
 #              args:
 #                name: Hystrix
 #                fallbackUri: forward:/fallback
+#            - StripPrefix=1
 #
 #        - id: business-applets
 #          uri: lb://business-applets
@@ -62,8 +67,7 @@
 #              args:
 #                name: Hystrix
 #                fallbackUri: forward:/fallback
-#
-#
+#            - StripPrefix=1
 #hystrix:
 #  command:
 #    default: #default全局有效，service id指定应用有效

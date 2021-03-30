@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="www.lingyuan.businesscooperation.dao.DictionaryMapper">
+
+    <!--     可根据自己的需求，是否要使用-->
+    <resultMap type="www.lingyuan.businesscooperation.entity.DO.Dictionary" id="DictionaryMap">
+        <result property="id" column="id"/>
+        <result property="keyword" column="keyword"/>
+        <result property="name" column="name"/>
+        <result property="parent" column="parent"/>
+        <result property="directionType" column="direction_type"/>
+        <result property="levels" column="levels"/>
+    </resultMap>
+    <sql id="DictionarySql">id,keyword,name,parent,direction_type,levels</sql>
+
+    <select id="getPage" resultMap="DictionaryMap">
+        select <include refid="DictionarySql"/> from dictionary
+        <where>
+            <if test="Dictionary.keyword!=null">
+                and keyword=#{Dictionary.keyword}
+            </if>
+            <if test="Dictionary.name!=null">
+                and name=#{Dictionary.name}
+            </if>
+            <if test="Dictionary.parent!=null">
+                and parent=#{Dictionary.parent}
+            </if>
+            <if test="Dictionary.directionType!=null">
+                and direction_type=#{Dictionary.directionType}
+            </if>
+            <if test="Dictionary.levels!=null">
+                and levels = #{Dictionary.levels}
+            </if>
+        </where>
+    </select>
+
+</mapper>
