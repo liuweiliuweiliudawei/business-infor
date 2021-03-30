@@ -1,0 +1,44 @@
+server:
+  port: 10002
+    # servlet:
+  # context-path: /businesscooperation
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://129.28.165.34:3306/ly_bd_business?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+    username: root
+    password: chengdu2018
+    druid:
+      test-on-borrow: true
+      test-while-idle: true
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+  configuration:
+    # 开启驼峰映射
+    #    map-underscore-to-camel-case: true
+    cache-enabled: false
+    # 返回map时，true:当查询数据为空时字段返回为null；false:不加这个查询数据为空时，字段将被隐藏
+    call-setters-on-nulls: true
+  #    链路
+  zipkin:
+    base-url: http://localhost:9411/
+  sleuth:
+    sampler:
+      probability: 1.0
+feign:
+  hystrix:
+    enabled: true
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled=true: true
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000

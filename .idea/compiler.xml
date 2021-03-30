@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="business-applets" />
+        <module name="business-user" />
+        <module name="business-gateway" />
+        <module name="business-cooperation" />
+        <module name="business-common" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="business-applets" target="1.8" />
+      <module name="business-code" target="8" />
+      <module name="business-common" target="8" />
+      <module name="business-cooperation" target="1.8" />
+      <module name="business-gateway" target="1.8" />
+      <module name="business-user" target="1.8" />
+      <module name="business-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="business-applets" options="-parameters" />
+      <module name="business-common" options="" />
+      <module name="business-cooperation" options="-parameters" />
+      <module name="business-gateway" options="-parameters" />
+      <module name="business-user" options="-parameters" />
+      <module name="business-web" options="-parameters" />
+    </option>
+  </component>
+</project>

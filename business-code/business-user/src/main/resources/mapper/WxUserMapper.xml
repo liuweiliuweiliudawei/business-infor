@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="www.lingyuan.businessuser.dao.WxUserMapper">
+
+<!--     可根据自己的需求，是否要使用-->
+    <resultMap type="www.lingyuan.businessuser.entity.DO.WxUser" id="WxUserMap">
+        <result property="id" column="id"/>
+        <result property="openid" column="openid"/>
+        <result property="sessionKey" column="sessionKey"/>
+        <result property="nickname" column="nickname"/>
+        <result property="avatarurl" column="avatarurl"/>
+        <result property="gender" column="gender"/>
+        <result property="country" column="country"/>
+        <result property="province" column="province"/>
+        <result property="city" column="city"/>
+        <result property="language" column="language"/>
+        <result property="ctime" column="ctime"/>
+        <result property="uptime" column="uptime"/>
+        <result property="mobile" column="mobile"/>
+    </resultMap>
+    <sql id="WxUserSql">id,openid,sessionKey,nickname,avatarurl,gender,country,province,city,language,ctime,uptime,mobile</sql>
+
+
+    <select id="getPage" resultMap="WxUserMap">
+        select id,openid,sessionKey,nickname,avatarurl,
+               case when gender=0 then '男' else '女' end as gender,country,province,city,language,ctime,uptime,mobile
+        from wx_user
+        <where>
+            <if test="WxUser.openid!=null">
+                and openid = #{WxUser.openid}
+            </if>
+            <if test="WxUser.nickname!=null">
+                and nickname=#{WxUser.nickname}
+            </if>
+            <if test="WxUser.gender!=null">
+                and gender=#{WxUser.gender}
+            </if>
+            <if test="WxUser.country!=null">
+                and country=#{WxUser.country}
+            </if>
+            <if test="WxUser.province!=null">
+                and province=#{WxUser.province}
+            </if>
+            <if test="WxUser.city!=null">
+                and city=#{WxUser.city}
+            </if>
+            <if test="WxUser.language!=null">
+                and language=#{WxUser.language}
+            </if>
+            <if test="WxUser.ctime!=null">
+                and ctime=#{WxUser.ctime}
+            </if>
+            <if test="WxUser.mobile!=null">
+                and mobile like concat('%',#{WxUser.mobile},'%')
+            </if>
+        </where>
+    </select>
+
+    <select id="getInfoByOpenid" resultMap="WxUserMap">
+        select id,openid,sessionKey,nickname,avatarurl,
+               case when gender=0 then '男' else '女' end as gender,country,province,city,language,ctime,uptime,mobile
+        from wx_user
+        where openid = #{openid}
+    </select>
+
+    <update id="updateInfoByOpenid" parameterType="integer">
+        update wx_user
+        <set>
+            <if test="WxUser.sessionKey!=null">
+                sessionKey=#{WxUser.sessionKey},
+            </if>
+            <if test="WxUser.nickname!=null">
+                nickname=#{WxUser.nickname},
+            </if>
+            <if test="WxUser.avatarurl!=null">
+                avatarurl=#{WxUser.avatarurl},
+            </if>
+            <if test="WxUser.gender!=null">
+                gender=#{WxUser.gender},
+            </if>
+            <if test="WxUser.country!=null">
+                country=#{WxUser.country},
+            </if>
+            <if test="WxUser.province!=null">
+                province=#{WxUser.province},
+            </if>
+            <if test="WxUser.city!=null">
+                city=#{WxUser.city},
+            </if>
+            <if test="WxUser.language!=null">
+                language=#{WxUser.language},
+            </if>
+            <if test="WxUser.mobile!=null">
+                mobile=#{WxUser.mobile}
+            </if>
+        </set>
+            where openid = #{WxUser.openid}
+    </update>
+
+</mapper>

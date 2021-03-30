@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/business.iml" filepath="$PROJECT_DIR$/.idea/business.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business-code/business-applets/business-applets.iml" filepath="$PROJECT_DIR$/business-code/business-applets/business-applets.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business-code/business-code.iml" filepath="$PROJECT_DIR$/business-code/business-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business-code/business-common/business-common.iml" filepath="$PROJECT_DIR$/business-code/business-common/business-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business-code/business-cooperation/business-cooperation.iml" filepath="$PROJECT_DIR$/business-code/business-cooperation/business-cooperation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business-code/business-gateway/business-gateway.iml" filepath="$PROJECT_DIR$/business-code/business-gateway/business-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business-code/business-user/business-user.iml" filepath="$PROJECT_DIR$/business-code/business-user/business-user.iml" />
+    </modules>
+  </component>
+</project>
