@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/business-code/business-cooperation/business-cooperation.iml" filepath="$PROJECT_DIR$/business-code/business-cooperation/business-cooperation.iml" />
       <module fileurl="file://$PROJECT_DIR$/business-code/business-gateway/business-gateway.iml" filepath="$PROJECT_DIR$/business-code/business-gateway/business-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/business-code/business-user/business-user.iml" filepath="$PROJECT_DIR$/business-code/business-user/business-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business-code/business-web/business-web.iml" filepath="$PROJECT_DIR$/business-code/business-web/business-web.iml" />
     </modules>
   </component>
 </project>

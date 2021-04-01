@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/business-code/business-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/business-code/business-applets/pom.xml" />
         <option value="$PROJECT_DIR$/business-code/business-cooperation/pom.xml" />
+        <option value="$PROJECT_DIR$/business-code/business-web/pom.xml" />
       </list>
     </option>
   </component>

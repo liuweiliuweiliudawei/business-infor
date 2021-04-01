@@ -1,0 +1,42 @@
+2021-04-01 09:31:25,956 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-04-01 09:31:37,529 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-04-01 09:31:40,648 INFO (StartupInfoLogger.java:61)- Started BusinessWebApplication in 17.184 seconds (JVM running for 18.546)
+2021-04-01 09:31:43,475 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-04-01 09:31:51,212 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-04-01 09:31:52,070 INFO (StartupInfoLogger.java:61)- Started BusinessCooperationApplication in 19.001 seconds (JVM running for 21.675)
+2021-04-01 09:31:56,943 INFO (StartupInfoLogger.java:61)- Started BusinessUserApplication in 18.228 seconds (JVM running for 21.188)
+2021-04-01 09:31:59,234 INFO (StartupInfoLogger.java:61)- Started BusinessAppletsApplication in 14.002 seconds (JVM running for 16.669)
+2021-04-01 09:34:34,013 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT id,password,salt,gender,role_id,ctime,locked,username FROM sys_user WHERE (username = ?) 
+2021-04-01 09:34:34,039 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 15884298898(String)
+2021-04-01 09:34:34,072 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2021-04-01 09:34:34,076 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT id,password,salt,gender,role_id,ctime,locked,username FROM sys_user WHERE (username = ?) 
+2021-04-01 09:34:34,078 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 15884298898(String)
+2021-04-01 09:34:34,090 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2021-04-01 09:35:19,603 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-04-01 09:35:25,869 INFO (StartupInfoLogger.java:61)- Started BusinessWebApplication in 8.075 seconds (JVM running for 9.178)
+2021-04-01 09:43:04,118 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-04-01 09:43:10,160 INFO (StartupInfoLogger.java:61)- Started BusinessWebApplication in 7.793 seconds (JVM running for 8.805)
+2021-04-01 09:48:10,242 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-04-01 09:48:16,623 INFO (StartupInfoLogger.java:61)- Started BusinessWebApplication in 8.292 seconds (JVM running for 9.329)
+2021-04-01 09:54:36,462 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-04-01 09:54:42,597 INFO (StartupInfoLogger.java:61)- Started BusinessWebApplication in 7.926 seconds (JVM running for 9.078)
+2021-04-01 09:58:25,123 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-04-01 09:58:31,187 INFO (StartupInfoLogger.java:61)- Started BusinessWebApplication in 7.833 seconds (JVM running for 8.899)
+2021-04-01 10:03:04,032 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-04-01 10:03:10,548 INFO (StartupInfoLogger.java:61)- Started BusinessWebApplication in 8.393 seconds (JVM running for 9.576)
+2021-04-01 10:03:29,592 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT id,password,salt,gender,role_id,ctime,locked,username FROM sys_user WHERE (username = ?) 
+2021-04-01 10:03:29,593 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 15884298898(String)
+2021-04-01 10:03:29,604 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2021-04-01 10:05:39,488 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-04-01 10:05:45,842 INFO (StartupInfoLogger.java:61)- Started BusinessWebApplication in 8.173 seconds (JVM running for 9.231)
+2021-04-01 10:06:04,028 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT id,password,salt,gender,role_id,ctime,locked,username FROM sys_user WHERE (username = ?) 
+2021-04-01 10:06:04,029 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 15884298898(String)
+2021-04-01 10:06:04,040 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2021-04-01 10:13:27,818 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-04-01 10:13:33,889 INFO (StartupInfoLogger.java:61)- Started BusinessWebApplication in 7.829 seconds (JVM running for 8.828)
+2021-04-01 10:14:19,323 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT id,password,salt,gender,role_id,ctime,locked,username FROM sys_user WHERE (username = ?) 
+2021-04-01 10:14:19,324 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 15884298898(String)
+2021-04-01 10:14:19,336 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2021-04-01 10:14:34,729 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT id,password,salt,gender,role_id,ctime,locked,username FROM sys_user WHERE (username = ?) 
+2021-04-01 10:14:34,730 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 15884298898(String)
+2021-04-01 10:14:34,740 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1

@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import common.ApiResponse;
 import common.ResponseStatus;
+import common.util.JWTRSA256;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,6 +38,7 @@ public class WechatLoginServiceImpl implements WechatLoginService {
     @Override
     public ApiResponse doLogin(Wechat wechat) {
         Map<String,Object> map = new HashMap<>();
+        String token = null;
         log.info("开始授权登录");
         if (wechat.getCode()==null && wechat.getIv()==null && wechat.getEncrypteData()==null
                 && wechat.getRawData()==null && wechat.getSignature()==null){
@@ -73,6 +75,7 @@ public class WechatLoginServiceImpl implements WechatLoginService {
             user.setUptime(new Date());
             user.setGender(gender);
             user.setMobile(phoneStr);
+            token = JWTRSA256.buildToken(user);
 
             userClient.save(user);
         }else {
@@ -82,6 +85,6 @@ public class WechatLoginServiceImpl implements WechatLoginService {
         sessionObj.put("openid",openid);
         sessionObj.put("sessionKey",sessionKey);
         redisTemplate.set(WeChatKey.WXUSER_OPENID_KEY+openid,sessionObj);
-        return ApiResponse.success();
+        return ApiResponse.build(token);
     }
 }

@@ -42,7 +42,7 @@ public class Swagger2Config implements WebMvcConfigurer {
     }
 
     private ApiInfo apiInfo() {
-        Contact contact = new Contact("yunqing", "", "yunqing****@gmail.com");
+        Contact contact = new Contact("lingyuan", "", "lingyuan*****@gmail.com");
         return new ApiInfoBuilder()
                 .title("SwaggerUI演示")
                 .description("接口文档，描述词省略200字")

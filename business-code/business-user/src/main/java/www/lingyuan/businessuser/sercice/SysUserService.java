@@ -14,4 +14,6 @@ public interface SysUserService extends IService<SysUser> {
 
     IPage<SysUser> getPage(IPage<Page> page,SysUser sysUser);
 
+    SysUser getByUserName(String username);
+
 }

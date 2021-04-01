@@ -1,5 +1,6 @@
 package www.lingyuan.businessuser.sercice.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -17,5 +18,11 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
     @Override
     public IPage<SysUser> getPage(IPage<Page> page, SysUser sysUser) {
         return baseMapper.getPage(page,sysUser);
+    }
+
+    @Override
+    public SysUser getByUserName(String username) {
+        return baseMapper.selectOne(new LambdaQueryWrapper<SysUser>()
+        .eq(SysUser::getUsername,username));
     }
 }

@@ -1,5 +1,7 @@
 package www.lingyuan.businessuser.controller;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import common.ApiResponse;
 import io.swagger.annotations.Api;
@@ -66,4 +68,12 @@ public class SysUserController {
         }
         return ApiResponse.error();
     }
+
+
+    @GetMapping("/getByUserName")
+    @ApiOperation("/根据username查询")
+    public ApiResponse getUerByUserName(@RequestParam("username")String username){
+        return ApiResponse.build(sysUserService.getByUserName(username));
+    }
+
 }
