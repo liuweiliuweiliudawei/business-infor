@@ -1,6 +1,5 @@
 package common.util;
 
-import com.alibaba.fastjson.JSONObject;
 import com.nimbusds.jose.JOSEException;
 import com.nimbusds.jose.JWSAlgorithm;
 import com.nimbusds.jose.JWSHeader;
@@ -11,9 +10,9 @@ import com.nimbusds.jose.jwk.gen.RSAKeyGenerator;
 import com.nimbusds.jwt.JWTClaimsSet;
 import com.nimbusds.jwt.SignedJWT;
 import common.excep.ResultException;
+
 import java.text.ParseException;
 import java.util.Date;
-import java.util.Enumeration;
 import java.util.Objects;
 
 /**
