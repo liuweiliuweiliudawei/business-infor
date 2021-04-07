@@ -15,6 +15,7 @@
         <module>business-applets</module>
         <module>business-cooperation</module>
         <module>business-common</module>
+        <module>business-web</module>
     </modules>
 
     <properties>

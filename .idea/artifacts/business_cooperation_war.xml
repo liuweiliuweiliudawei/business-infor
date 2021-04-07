@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="business-cooperation:war">
+    <output-path>$PROJECT_DIR$/business-code/business-cooperation/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>business-cooperation</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="business-cooperation-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="business-cooperation:war exploded" />
+    </root>
+  </artifact>
+</component>

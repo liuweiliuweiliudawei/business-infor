@@ -6,12 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="business-applets" />
         <module name="business-web" />
         <module name="business-user" />
+        <module name="business-common" />
+        <module name="business-applets" />
         <module name="business-gateway" />
         <module name="business-cooperation" />
-        <module name="business-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

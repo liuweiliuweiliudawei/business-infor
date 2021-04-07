@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="business-web:war">
+    <output-path>$PROJECT_DIR$/business-code/business-web/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>business-web</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="business-web-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="business-web:war exploded" />
+    </root>
+  </artifact>
+</component>

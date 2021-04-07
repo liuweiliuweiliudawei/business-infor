@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="business-applets:war">
+    <output-path>$PROJECT_DIR$/business-code/business-applets/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>business-applets</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="business-applets-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="business-applets:war exploded" />
+    </root>
+  </artifact>
+</component>

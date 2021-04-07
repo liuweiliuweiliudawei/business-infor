@@ -10,7 +10,7 @@ import java.io.Serializable;
  * @author chunjianjun
  * @date 2021-01
  */
-
+@SuppressWarnings("unchecked")
 public class ApiResponse<T> implements Serializable {
 	private static final long serialVersionUID = 1L;
 
