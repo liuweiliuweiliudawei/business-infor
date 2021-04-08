@@ -11,11 +11,11 @@
     <description>商务合作平台</description>
     <modules>
         <module>business-user</module>
-        <module>business-gateway</module>
-        <module>business-applets</module>
-        <module>business-cooperation</module>
+<!--        <module>business-gateway</module>-->
+<!--        <module>business-applets</module>-->
+<!--        <module>business-cooperation</module>-->
         <module>business-common</module>
-        <module>business-web</module>
+<!--        <module>business-web</module>-->
     </modules>
 
     <properties>
