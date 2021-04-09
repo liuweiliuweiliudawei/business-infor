@@ -9,7 +9,7 @@ pipeline {
         }
         stage('build project') {
             steps {
-               sh '''cd /var/lib/jenkins/workspace/web_demo_pipeline/business-code/business-common/
+               sh '''cd /var/lib/jenkins/workspace/web_demo_pipeline/business-code/
 mvn clean package
 '''
             }
